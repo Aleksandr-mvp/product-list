@@ -1,5 +1,5 @@
 <template>
-  <div v-if="products.length" style="display: flex">
+  <div v-if="products.length" style="display: flex; flex-wrap: wrap; width:1200px">
     <div v-for="product in products" :key="product.title" class="card">
       <div>
         <img class="img" :src="product.imageUrl" alt="img">
